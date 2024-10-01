@@ -1,7 +1,5 @@
 package ingsoft.patrones.strategy;
 
-//TODO: Implementar el patrón Strategy. NO modificar los tests.
-
 public class Calculator {
     public int calculate(String operation, int a, int b) {
         switch (operation) {

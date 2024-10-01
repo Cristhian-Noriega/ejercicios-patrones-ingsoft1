@@ -1,7 +1,5 @@
 package ingsoft.patrones.state;
 
-//TODO: Implementar el patrón State. NO modificar los tests.
-
 public class Fan {
   private static final int OFF = 0;
   private static final int LOW = 1;

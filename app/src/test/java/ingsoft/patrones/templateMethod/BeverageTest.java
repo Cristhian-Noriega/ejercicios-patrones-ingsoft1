@@ -29,8 +29,6 @@ public class BeverageTest {
         tea.prepare()
     );
   }
-
-  //TODO: Agregar la bebida 'Hot Chocolate' y probarla con el siguiente test
   
   // @Test
   // void testPrepareHotChocolate() {
