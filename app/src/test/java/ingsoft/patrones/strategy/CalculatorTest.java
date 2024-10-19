@@ -7,22 +7,22 @@ public class CalculatorTest {
   private final Calculator calculator = new Calculator();
 
   @Test
-  void testAddition() {
+  void testAddition() throws Exception {
       assertEquals(5, calculator.calculate("add", 2, 3));
   }
 
   @Test
-  void testSubtraction() {
+  void testSubtraction() throws Exception {
       assertEquals(2, calculator.calculate("subtract", 5, 3));
   }
 
   @Test
-  void testMultiplication() {
+  void testMultiplication() throws Exception {
       assertEquals(15, calculator.calculate("multiply", 3, 5));
   }
 
   @Test
-  void testDivision() {
+  void testDivision() throws Exception {
       assertEquals(2, calculator.calculate("divide", 6, 3));
   }
 
