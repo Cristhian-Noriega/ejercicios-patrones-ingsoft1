@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class PizzaTest {
     @Test
     public void testCreateSimplePizza() {
-        Pizza pizza = new Pizza();
+        Pizza pizza = new BasicPizza();
 
         assertEquals("Pizza", pizza.getDescription());
         assertEquals(10, pizza.getCost());
@@ -21,7 +21,7 @@ public class PizzaTest {
         assertEquals(11.5, pizza.getCost());
     }
 
-    @Test
+    @Test       
     public void testCreatePizzaWithCheeseAndPeperoni() {
         Pizza pizza = new PizzaWithCheeseAndPeperoni();
 
