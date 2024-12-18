@@ -3,14 +3,14 @@ package ingsoft.patrones.decorator;
 public class PizzaWithCheeseAndPeperoni implements Pizza {
     private final Pizza pizza;
 
-    public PizzaWithCheeseAndPeperoni(Pizza pizza) {
-        this.pizza = pizza;
+    public PizzaWithCheeseAndPeperoni() {
+        this.pizza = new PepperoniDecorator(new CheeseDecorator(new BasicPizza()));
     }
     public String getDescription() {
-        return pizza.getDescription() + " + Peperoni";
+        return pizza.getDescription();
     }
     
     public double  getCost() {
-        return pizza.getCost() + 2;
+        return pizza.getCost();
     }
 }
