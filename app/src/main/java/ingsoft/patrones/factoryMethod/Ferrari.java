@@ -1,9 +1,13 @@
 package ingsoft.patrones.factoryMethod;
 
-//TODO: Implementar el patrón Factory Method. NO modificar los tests.
 
-public class Ferrari {
+public class Ferrari extends Auto{
     public int calculateDistance(int timeAmount) {
         return new FerrariVelocityCalculator().getVelocity() * timeAmount;
+    }
+
+    @Override
+    protected VelocityCalculator createVelocityCalculator() {
+        return new FerrariVelocityCalculator();
     }
 }
