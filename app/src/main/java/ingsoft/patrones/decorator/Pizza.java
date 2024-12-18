@@ -1,11 +1,6 @@
 package ingsoft.patrones.decorator;
 
-public class Pizza {
-    public String getDescription() {
-        return "Pizza";
-    }
-    
-    double  getCost() {
-        return 10;
-    }
+public interface Pizza {
+    String getDescription();
+    double getCost();
 }

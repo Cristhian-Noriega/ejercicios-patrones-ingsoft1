@@ -1,11 +1,16 @@
 package ingsoft.patrones.decorator;
 
-public class PizzaWithCheeseAndPeperoni extends Pizza {
+public class PizzaWithCheeseAndPeperoni implements Pizza {
+    private final Pizza pizza;
+
+    public PizzaWithCheeseAndPeperoni(Pizza pizza) {
+        this.pizza = pizza;
+    }
     public String getDescription() {
-        return "Pizza + Cheese + Peperoni";
+        return pizza.getDescription() + " + Peperoni";
     }
     
-    double  getCost() {
-        return 10 + 1.5 + 2;
+    public double  getCost() {
+        return pizza.getCost() + 2;
     }
 }
