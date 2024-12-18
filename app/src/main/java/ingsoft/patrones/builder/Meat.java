@@ -1,9 +1,9 @@
 package ingsoft.patrones.builder;
 
-public class Meet implements BurguerPart {
+public class Meat implements BurguerPart {
     private BurguerPart part;
 
-    public Meet(BurguerPart part) {
+    public Meat(BurguerPart part) {
         this.part = part;
     }
 
