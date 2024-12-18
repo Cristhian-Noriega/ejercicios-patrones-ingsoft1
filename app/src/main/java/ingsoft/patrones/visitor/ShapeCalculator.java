@@ -4,10 +4,10 @@ import java.util.List;
 
 public class ShapeCalculator {
   public static double getTotalArea(List<Shape> shapes) {
-    double totalArea = 0;
+    AreaCalculatorVisitor areaCalculatorVisitor = new AreaCalculatorVisitor();
     for (Shape shape : shapes) {
-      totalArea += shape.getArea();
+      shape.accept(areaCalculatorVisitor);
     }
-    return totalArea;
+    return areaCalculatorVisitor.getTotalArea();
   }
 }

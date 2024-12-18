@@ -9,8 +9,20 @@ public class Rectangle implements Shape {
     this.height = height;
   }
 
+  public double getWidth() {
+    return width;
+  }
+
+  public double getHeight() {
+    return height;
+  }
+
   @Override
   public double getArea() {
     return width * height;
+  }
+
+  public void accept(ShapeVisitor visitor) {
+    visitor.visit(this);
   }
 }
